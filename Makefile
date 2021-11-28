@@ -17,5 +17,9 @@ build-release:
 	yarn build-release
 	chmod +x dist/cli.js
 
+build-contracts:
+	rm -rf artifacts/
+	yarn compile:contracts
+
 release:
 	yarn release
